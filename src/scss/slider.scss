@@ -1,0 +1,106 @@
+.main {
+  position: relative;
+  background: #373737;
+  background-size: cover;
+  color: #ffffff;
+  margin-bottom: 30px; 
+  max-width: 1600px;
+  margin: 0 auto;
+
+}
+
+.main-slider {
+  &__slide-1 {
+    position: relative;
+    background: #48d7d7 url(../img/main_slide/main_slide_1.png) 90% 100% no-repeat;
+  }
+  &__slide-2 {
+    position: relative;
+    background: #f2009c url(../img/main_slide/main_slide_2.png) 90% 100% no-repeat;
+  }
+  &__slide-3 {
+    position: relative;
+    background: #48d7d7 url(../img/main_slide/main_slide_3.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+[class*='slide-'] {
+  min-height: 876px;
+}
+
+.main-info {
+  margin-top: 261px;
+  min-height: 421px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 0.95;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-info__title {
+  margin-left: -7px;
+}
+
+.info__title {
+  font-size: 94px;
+  font-weight: 800;
+  text-transform: uppercase;
+  span{
+    font-size: 124px;
+  }
+}
+
+.info__descr {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 0.57;
+}
+
+.main-info__button {
+  padding: 34px 92px 24px 100px;
+  max-width: 381px;
+}
+
+.info__button {
+  border-radius: 50px;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image: linear-gradient(to top, #3da139, #55dd49);
+  background-color: #4db848;
+  background-image: linear-gradient(to bottom, #55dd49 0%, #3da139 100%);
+  box-shadow: 0 5px 0 #298624, inset 0 5px 5px rgba(247, 235, 151, 0.66);
+  line-height: 0,01;
+  text-shadow: 1px 1px 1px #24811b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.social-button {
+  position: absolute;
+  min-height: 35px;
+  z-index: 10;
+  max-width: 128px;
+  bottom: 39px;
+  right: 35px;
+}
+
+.social-header {
+  a:not(:first-child) {
+    margin-left: 7px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  min-height: 35px;
+  z-index: 10;
+  bottom: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}

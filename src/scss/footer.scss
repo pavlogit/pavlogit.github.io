@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  margin-top: 107px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-vk, .footer-youtube, .footer-inst {
+  width: 53px;
+  height: 53px;
+}
+
+.footer-logo {
+  flex: 1 1 42.09%;
+  .footer-logo__text {
+    max-width: 253px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #a2a2a2;
+  }
+  img {
+    max-width: 185px;
+    padding-bottom: 27px;
+  }
+}
+
+.footer-copyright {
+  flex: 1 1 39.91%;
+  color: #282528;
+  opacity: 0.8;
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+.footer-social {
+  flex: 1 1 17.09%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-vk {
+  background: url(../img/footer/footer_vk.png) center no-repeat;
+  &:hover, &:active {
+    background: url(../img/footer/vk_active.png) center no-repeat;
+  }
+}
+
+.footer-youtube {
+  background: url(../img/footer/footer_youtube.png) center no-repeat;
+  &:hover, &:active {
+    background: url(../img/footer/youtube_active.png) center no-repeat;
+  }
+}
+
+.footer-inst {
+  background: url(../img/footer/footer_instagram.png) center no-repeat;
+  &:hover, &:active {
+    background: url(../img/footer/instagram_active.png) center no-repeat;
+  }
+}

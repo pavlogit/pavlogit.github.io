@@ -1,0 +1,59 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  max-width: 1240px;
+  background: #ffffff;
+  margin: 35px -35px 0 -35px;
+  padding: 0 37px;
+  min-height: 95px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  transition: 0.4s ease;
+  z-index: 999999;
+}
+
+.site-header__logo {
+  flex: 1 1 20.09%;
+  cursor: pointer;
+}
+
+.site-header__nav {
+  flex: 1 1 61.98%;
+}
+
+.site-header__phone {
+  flex: 1 1 14.53%;
+  text-align: right;
+  a {
+    color: #282528;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #969596;
+    cursor: pointer;
+    &:hover{
+      color: #f69e00;
+    }
+  }
+  li.active a {
+    color: #282528;
+  }
+}
+

@@ -1,0 +1,38 @@
+.steps {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 157px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.step-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:not(:last-of-type) {
+    margin-right: 100px;
+  }
+  min-height: 232px;
+  &:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: -60px;
+    background: url(../img/step/step_arrow.png) center no-repeat;
+    width: 14px;
+    height: 23px;
+  }
+  .step-block__text {
+    color: #212121;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .step-block__img {
+    margin: auto 0;
+  }
+}

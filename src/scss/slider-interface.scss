@@ -1,0 +1,92 @@
+.slider-arrow {
+  position: absolute;
+  top: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+.slider-arrow-left {
+  top: 26.4%;
+  left: 0;
+  background: url(../img/feedback/feedback_arrow_left.png) center no-repeat;
+  cursor: pointer;
+  &:hover {
+    background: url(../img/feedback/feedback_arrow-active_left.png) center no-repeat;
+  }
+}
+.slider-arrow-right {
+  top: 26.4%;
+  right: 0;
+  background: url(../img/feedback/feedback_arrow_right.png) center no-repeat;
+  cursor: pointer;
+  &:hover {
+    background: url(../img/feedback/feedback_arrow-active_right.png) center no-repeat;
+  }
+}
+
+
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 1px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url('https://vectr.com/tmp/ipChT9K2s/autkPneCO.svg?width=10&height=10&select=dIrUB8hfM&source=selection');
+  text-align: center;
+  opacity: 0.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   
+}
+
+.my-dots li.slick-active button:before {
+  content: url('https://vectr.com/tmp/ipChT9K2s/autkPneCO.svg?width=15&height=15&select=dIrUB8hfM&source=selection');
+  opacity: 1;
+}

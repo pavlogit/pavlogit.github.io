@@ -1,0 +1,63 @@
+.feedback{
+  background-color: #fafafa;
+  padding-bottom: 75px;
+}
+
+.feedback-slide {
+  text-align: center;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.feedback-card {
+  padding: 0 100px 10px 100px;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.feedback-card__quotes {
+  flex: 1 1 158px;
+  padding-bottom: 10px;
+}
+
+.feedback-card__text {
+  flex: 1 1 329px;
+  text-align: justify;
+  color: #282528;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2;
+  p:first-child {
+    padding-bottom: 55px;
+  }
+}
+
+.feedback-card__photo {
+  flex: 1 1 283px;
+}
+
+.feedback-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.feedback-photo__img {
+  padding-bottom: 43px;
+}
+
+.feedback-photo__name {
+  color: #282528;
+  font-size: 23px;
+  font-weight: 700;
+  span {
+    display: block;
+    color: #646464;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+
